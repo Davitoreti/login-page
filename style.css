@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div-imagem {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+}
+
+.imagem {
+    padding: 1.2rem;
+    max-width: 400px;
+    height: 100vh;
+}
