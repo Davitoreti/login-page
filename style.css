@@ -35,34 +35,66 @@
     justify-self: center;
     align-self: center;
     gap: 20px;
+    width: 63%;
 }
 
 .form-title {
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.7rem;
+    padding-top: 1rem;
     font-family: var(--font-Merriweather);
+    color: #1A202C;
+    font-size: 0.9rem;
 }
 
 #form-title-h1 {
     font-weight: 600;
 }
 
-#form-title-h2 {
-    font-weight: 300;
+#form-title-p {
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 
 .form-group {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10px;
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+#Email {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    width: 98%;
+}
+
+#Password {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    width: 98%;
 }
 
 .form-check {
     display: flex;
-    gap: 5px;
+    font-size: 1rem;
+    justify-content: space-around;
 }
 
-.form-linkSenha {
-    position: relative;
-    left: 4rem;
+#checkbox {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#form-linkSenha {
+    color: #27619F;
+    text-decoration: none;
 }
 
 .form-buttons {
@@ -72,6 +104,126 @@
     padding: 1rem;
 }
 
+.btn-primary {
+    padding: 0.9rem;
+    background-color: #3BC35C;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-secundary {
+    padding: 0.9rem;
+    background-color: #1A202C;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#icon-google {
+    position: relative;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
 .form-footer {
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#form-linkCadastro {
+    color: #27619F;
+    text-decoration: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .imagem {
+        width: 95vw;
+        height: 60vh;
+    }
+
+    .form__container {
+        width: 80vw;
+    }
+
+    .form-title {
+        font-size: 0.6rem;
+        position: relative;
+        top: 1rem;
+    }
+
+    .form-group {
+        font-size: 0.7rem;
+        position: relative;
+        top: 1rem;
+    }
+
+    .form-check {
+        position: relative;
+        top: 1rem;
+        font-size: 0.6rem;
+    }
+
+    #form-linkSenha {
+        font-size: 0.6rem;
+    }
+
+    .form-buttons {
+        position: relative;
+        top: 1rem;
+    }
+
+    .btn-primary, .btn-secundary {
+        font-size: 0.7rem;
+        padding: 0.7rem;
+    }
+
+    .form-footer {
+        position: relative;
+        top: 1rem;
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .imagem {
+        width: 100vw;
+        height: 100vh;
+        transform: scale(1.2);
+    }
+
+    .form-title {
+        position: relative;
+        top: 2rem;
+    }
+
+    .form-group {
+        position: relative;
+        top: 2rem;
+    }
+
+    .form-buttons {
+        position: relative;
+        top: 2.5rem;
+    }
+
+    .form-footer {
+        position: relative;
+        top: 2rem;
+    }
 }

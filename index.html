@@ -18,8 +18,8 @@
             </div>
         <div class="form__container">
             <div class="form-title">
+                <p id="form-title-p">Bem vindo de volta</p>
                 <h1 id="form-title-h1">Faça login na sua conta</h1>
-                <h2 id="form-title-h2">Bem vindo de volta</h2>
             </div>
             <form>
                 <div class="form-group">
@@ -31,21 +31,23 @@
                   <input type="password" class="form-control" id="Password">
                 </div>
                 <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="Check">
-                  <label class="form-check-label" for="Check">Lembre de mim</label>
-                  <div class="form-linkSenha">
-                    <a href="#">Esqueceu a senha</a>
+                  <div id="checkbox">
+                    <input type="checkbox" class="form-check-input" id="Check">
+                    <label class="form-check-label" for="Check">Lembre de mim</label>
+                  </div>
+                  <div>
+                    <a href="#" id="form-linkSenha">Esqueceu a senha</a>
                   </div>
                 </div>
                 <div class="form-buttons">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
                     <button type="submit" class="btn btn-secundary">
-                        <img width="16" height="16" src="https://img.icons8.com/color/16/google-logo.png" alt="google-logo"/>
+                        <img width="16" height="16" src="https://img.icons8.com/color/16/google-logo.png" alt="google-logo" id="icon-google"/>
                         Ou faça login com Google
                     </button>
                 </div>
                 <div class="form-footer">
-                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                    <p>Não tem uma conta? <a href="#" id="form-linkCadastro">Cadastre-se</a></p>
                 </div>
               </form>
         </div>
