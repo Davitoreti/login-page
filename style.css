@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-Merriweather: "Merriweather", serif;
+    --font-Lato: "Lato", sans-serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family: var(--font-Lato);
 }
 
 .div-imagem {
@@ -20,4 +26,52 @@
     padding: 1.2rem;
     max-width: 400px;
     height: 100vh;
+}
+
+.form__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    justify-self: center;
+    align-self: center;
+    gap: 20px;
+}
+
+.form-title {
+    font-family: var(--font-Merriweather);
+}
+
+#form-title-h1 {
+    font-weight: 600;
+}
+
+#form-title-h2 {
+    font-weight: 300;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.form-check {
+    display: flex;
+    gap: 5px;
+}
+
+.form-linkSenha {
+    position: relative;
+    left: 4rem;
+}
+
+.form-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 1rem;
+}
+
+.form-footer {
+    padding: 2rem;
 }
